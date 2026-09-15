@@ -3,6 +3,7 @@
 [![CI](https://github.com/jayblast-spec/agora/actions/workflows/ci.yml/badge.svg)](https://github.com/jayblast-spec/agora/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/agora-protocol)](https://www.npmjs.com/package/agora-protocol)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![Docs](https://img.shields.io/badge/docs-agora--protocol.vercel.app-5eeab0)](https://agora-protocol.vercel.app)
 
 ![Agora: propose, vote or veto, resolve](./docs/banner.svg)
 
