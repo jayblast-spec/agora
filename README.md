@@ -1,5 +1,9 @@
 # Agora
 
+[![CI](https://github.com/jayblast-spec/agora/actions/workflows/ci.yml/badge.svg)](https://github.com/jayblast-spec/agora/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/agora-protocol)](https://www.npmjs.com/package/agora-protocol)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
 **Propose, vote, veto, and quorum semantics for multi-agent systems — layered on top of [MCP](https://modelcontextprotocol.io) and [A2A](https://a2a-protocol.org) without changing either spec.**
 
 ## The gap this fills
