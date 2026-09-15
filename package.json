@@ -58,7 +58,7 @@
     "url": "https://github.com/jayblast-spec/agora/issues"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
