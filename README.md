@@ -138,6 +138,10 @@ npm test
 npm run build
 ```
 
+## Ownership
+
+Agora is MIT and stays free to use. The repo, the `agora-protocol` npm package and the copyright are for sale to a team that wants to steward it: https://veroputech.gumroad.com/l/agora-protocol
+
 ## License
 
 MIT
