@@ -1,0 +1,174 @@
+:root {
+  --ink: #1a1814;
+  --muted: #5c564c;
+  --paper: #f6f3ec;
+  --line: #e3dcd0;
+  --teal: #0c6b56;
+  --code: #1a1814;
+  --code-text: #f6f3ec;
+  --mint: #5eeab0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(900px 420px at 0% -10%, #e5f6ef 0%, transparent 55%),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--teal);
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px 72px;
+}
+
+.kicker {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #143d34;
+  color: var(--mint);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.7rem, 8vw, 4.25rem);
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 0;
+  max-width: 40rem;
+  font-size: 1.15rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 18px;
+}
+
+nav a {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 28px 0 8px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+section {
+  margin-top: 36px;
+}
+
+p,
+li {
+  color: var(--ink);
+}
+
+ul {
+  margin: 12px 0 0;
+  padding-left: 1.2rem;
+}
+
+li + li {
+  margin-top: 6px;
+}
+
+pre {
+  margin: 12px 0 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  background: var(--code);
+  color: var(--code-text);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.links li {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.links span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding-top: 28px;
+  }
+
+  pre {
+    font-size: 0.8rem;
+  }
+}
