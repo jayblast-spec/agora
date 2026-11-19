@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" width="860" height="280" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="1" y="1" width="858" height="278" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="430" y="32" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2328">Agora: propose -&gt; vote / veto -&gt; resolve</text>
+
+  <rect x="30" y="60" width="150" height="55" rx="8" fill="#eef4ff" stroke="#2f6fed"/>
+  <text x="105" y="83" text-anchor="middle" font-size="11" font-weight="600" fill="#0b3d91">planner-agent</text>
+  <text x="105" y="99" text-anchor="middle" font-size="10" fill="#334">proposes action</text>
+
+  <path d="M180 87 H240" stroke="#57606a" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <rect x="240" y="45" width="150" height="45" rx="8" fill="#fbf1ff" stroke="#8250df"/>
+  <text x="315" y="65" text-anchor="middle" font-size="10" fill="#4b2a7a">reviewer-agent</text>
+  <text x="315" y="80" text-anchor="middle" font-size="10" fill="#4b2a7a">votes yes</text>
+
+  <rect x="240" y="100" width="150" height="45" rx="8" fill="#fbf1ff" stroke="#8250df"/>
+  <text x="315" y="120" text-anchor="middle" font-size="10" fill="#4b2a7a">ops-agent</text>
+  <text x="315" y="135" text-anchor="middle" font-size="10" fill="#4b2a7a">votes yes</text>
+
+  <path d="M390 87 H460" stroke="#57606a" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <polygon points="460,55 560,87 460,119 360,87" fill="#fff7e6" stroke="#d4a017" transform="translate(0,0)" style="display:none"/>
+  <rect x="460" y="55" width="150" height="65" rx="8" fill="#fff7e6" stroke="#d4a017"/>
+  <text x="535" y="80" text-anchor="middle" font-size="11" font-weight="600" fill="#7a5200">Round.evaluate()</text>
+  <text x="535" y="96" text-anchor="middle" font-size="10" fill="#334">veto &gt; timeout &gt; quorum</text>
+  <text x="535" y="110" text-anchor="middle" font-size="10" fill="#334">idempotent resolution</text>
+
+  <path d="M610 75 H660" stroke="#57606a" stroke-width="2" marker-end="url(#arrow3)"/>
+  <path d="M610 100 H660" stroke="#57606a" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <rect x="660" y="50" width="160" height="40" rx="7" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="740" y="75" text-anchor="middle" font-size="11" font-weight="700" fill="#116329">approved</text>
+
+  <rect x="660" y="95" width="160" height="40" rx="7" fill="#ffebe9" stroke="#cf222e"/>
+  <text x="740" y="120" text-anchor="middle" font-size="11" font-weight="700" fill="#82071e">vetoed / rejected</text>
+
+  <text x="105" y="170" font-size="11" fill="#57606a" text-anchor="start">safety-agent</text>
+  <rect x="30" y="180" width="150" height="45" rx="8" fill="#ffebe9" stroke="#cf222e"/>
+  <text x="105" y="200" text-anchor="middle" font-size="10" fill="#82071e">safety-agent</text>
+  <text x="105" y="215" text-anchor="middle" font-size="10" fill="#82071e">casts a veto (reason req'd)</text>
+  <path d="M180 202 C 260 202, 400 130, 460 90" stroke="#cf222e" stroke-width="2" fill="none" stroke-dasharray="4 3" marker-end="url(#arrowred)"/>
+  <text x="330" y="245" text-anchor="middle" font-size="11" fill="#57606a">A veto short-circuits the round regardless of tally -- unanimous "yes" still loses.</text>
+  <text x="330" y="262" text-anchor="middle" font-size="11" fill="#57606a">Layered on MCP and A2A wire formats without changing either spec.</text>
+
+  <defs>
+    <marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#57606a"/>
+    </marker>
+    <marker id="arrowred" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#cf222e"/>
+    </marker>
+  </defs>
+</svg>
