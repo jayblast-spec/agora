@@ -9,6 +9,16 @@
 
 **Propose, vote, veto, and quorum semantics for multi-agent systems — layered on top of [MCP](https://modelcontextprotocol.io) and [A2A](https://a2a-protocol.org) without changing either spec.**
 
+## What I built
+
+I designed and wrote Agora end to end:
+
+- the zero-dependency `Round` state machine in `src/core` (propose, vote or veto, evaluate), with count and fraction quorums and tally logic;
+- the pluggable `RoundStore` persistence interface and an in-memory store (`src/storage`);
+- reference adapters that carry rounds over MCP and A2A (`src/adapters`);
+- the Vitest test suite covering the core, storage and adapters, plus CI;
+- the documentation site on GitHub Pages and the published [`agora-protocol`](https://www.npmjs.com/package/agora-protocol) npm package.
+
 ## The gap this fills
 
 A September 2026 protocol analysis, [*Governance Gaps in Agent Interoperability Protocols*](https://arxiv.org/abs/2606.31498), examined MCP, A2A, ACP, ANP, and ERC-8004 — every major agent interoperability protocol in production use — and found that **voting and dissent preservation are universally absent** across all five. None of them define a quorum primitive, a preference-aggregation rule, or a way to record that a proposal was rejected and why. When multiple agents need to jointly decide whether to take an action, every team currently hand-rolls this logic, differently, inside their own orchestration code.
@@ -160,4 +170,4 @@ This is one of 8 independent open-source infrastructure tools, each built agains
 
 ---
 
-Built by [ArkNet Digital](https://github.com/jayblast-spec).
+Built and maintained by [Michael Ogunleye](https://github.com/jayblast-spec) · [ArkNet Digital](https://arknet.digital).
